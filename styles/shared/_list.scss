@@ -1,0 +1,109 @@
+/**
+ * Styles for list.
+ */
+
+// When interactive hide by defualt
+.is-interactive {
+  .executive-female,
+  .executive-non-ceo {
+    display: none;
+  }
+
+  .sub-list-title {
+    display: none;
+  }
+}
+
+.sub-list-title {
+  padding: 0;
+  font-size: 2em;
+  margin-bottom: 1em;
+
+  // Default view
+  &.ceo-title {
+    display: block;
+  }
+}
+
+.executive {
+  padding-bottom: 2em;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 2em;
+  list-style: none;
+
+  p {
+    @include font-styles("benton-sans");
+
+    margin-bottom: 1em;
+    letter-spacing: -0.2px;
+  }
+
+  @each $c in $category-colors {
+    $i: index($category-colors, $c);
+
+    &.category-color-#{$i} .rank {
+      background-color: $c;
+    }
+  }
+
+  .rank {
+    // width: 100%;
+    @include font-styles("popular-light");
+
+    font-size: 4em;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0 0.5em;
+    text-align: center;
+    padding: 0.25em;
+    border-radius: 0.1em;
+    background-color: map-get($grays, "lighter");
+
+    @media only screen and (max-width: map-get($breakpoints, "sm")) {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+  }
+
+  h2 {
+    font-size: 2.2em;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    padding-bottom: 0.2em;
+  }
+
+  .officer-title {
+    @include font-styles("benton-sans");
+
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: #999999;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .footnotes {
+    font-size: 0.85em;
+    color: #565656;
+    margin-bottom: (1 / 0.85) em;
+  }
+
+  .data-row {
+    ul {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    li {
+      list-style: none;
+      margin: 0 0 0.5em;
+      padding: 0;
+    }
+
+    .main-financial-value {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+}

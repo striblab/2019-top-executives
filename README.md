@@ -1,28 +1,42 @@
 # 2019 Top Executives
 
-2019 list of MN top executives 
+2019 list of MN top executives
 
 ## Data
 
-_<Describe data and where it comes from.>_
+Our database of businesses, non-profits and finances are in the Data Drop database. There is an interface for this specific data at the [Data UI](https://github.com/striblab/data-ui). We pull in data via the Data UI API (see setup below); note that the API is slow so the when the data does get pulled when building project, it can be slow (caches by default, but can use `--no-cache` to force update).
 
 Utilizes [Air Supply](https://zzolo.org/air-supply/) to pull in data that is available in the templating.
 
+## Setup
+
+Make sure the following values are environment variables, these can be defined in the [`dotenv`](https://www.npmjs.com/package/dotenv) file.
+
+- `DATA_UI_LOCATION`: Base URL to [Data UI](https://github.com/striblab/data-ui); should be something like `https://example.example/data-ui/`
+- `DATA_UI_USERNAME`: Username for your API key. If you do not have one, get someone to make you one.
+- `DATA_UI_API_KEY`: API key.
+- `BUSINESS_DB_URI`: The URI to the database.
+
+## Print
+
+_TODO_
+
+A CSV file that is useful for the print version will be output to `scratch/executives.csv`. This is done when the `gulp html` command is run, which is apart of any build related command like `gulp develop` or `gulp publish`.
 
 ## Development
 
-* Markup: In `templates/` directory, specifically `templates/_index-content.svelte.html`
-    * Utilizes [Svelte v2](https://v2.svelte.dev/) and pulls data from the `air-supply.config.js` file.
-* Styles: [SASS](https://sass-lang.com/) styles in `styles/` directory, specifically start with `styles/shared/project.scss`.
-* JS (client): Client-side JS is in `app/` directory, specifically in `app/index.js`.
-    * See comments in `app/index.js` to pull in the Svelte templates for client-side interaction.
-* Static assets: For things like images, anything in the `assets/` directory will get copied over to the build.
+- Markup: In `templates/` directory, specifically `templates/_index-content.svelte.html`
+  - Utilizes [Svelte v2](https://v2.svelte.dev/) and pulls data from the `air-supply.config.js` file.
+- Styles: [SASS](https://sass-lang.com/) styles in `styles/` directory, specifically start with `styles/shared/project.scss`.
+- JS (client): Client-side JS is in `app/` directory, specifically in `app/index.js`.
+  - See comments in `app/index.js` to pull in the Svelte templates for client-side interaction.
+- Static assets: For things like images, anything in the `assets/` directory will get copied over to the build.
 
 More details: [docs/development.md](./docs/development.md).
 
 ## Publishing
 
-The `gulp deploy` command will clear out the build, re-build the project, and publish it up to `static.startribune.com`.  Use `gulp deploy --production` to put in a production spot.  Use `gulp publish:open` to open the publish URL in a browser.
+The `gulp deploy` command will clear out the build, re-build the project, and publish it up to `static.startribune.com`. Use `gulp deploy --production` to put in a production spot. Use `gulp publish:open` to open the publish URL in a browser.
 
 If using CMS integration, run the `gulp cms:lcd --get=content` command to get the values to go into the LCD.
 
@@ -30,7 +44,7 @@ More details: [docs/publishing.md](./docs/publishing.md).
 
 ## CMS integration
 
-Make sure you have an article in [news-platform](https://github.com/MinneapolisStarTribune/news-platform/) that is using the `shared/generic-interactive-v01.twig` tempalate.  Then put that article ID and LCD ID into the appropriate slots in `config.json`.
+Make sure you have an article in [news-platform](https://github.com/MinneapolisStarTribune/news-platform/) that is using the `shared/generic-interactive-v01.twig` tempalate. Then put that article ID and LCD ID into the appropriate slots in `config.json`.
 
 More details: [docs/cms.md](./docs/cms.md).
 

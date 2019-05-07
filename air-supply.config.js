@@ -7,8 +7,15 @@
  */
 
 // Depdencies
-const gutil = require('gulp-util');
+const path = require('path');
+const fs = require('fs-extra');
+const _ = require('lodash');
 const { argv } = require('yargs');
+const transformExecutives = require('./lib/project/transform-executives.js');
+const printExecutives = require('./lib/project/print-executives.js');
+
+// Year of publishing
+const publishYear = 2019;
 
 // Export
 module.exports = {
@@ -27,6 +34,43 @@ module.exports = {
     argv: {
       source: argv,
       type: 'data'
+    },
+    publishYear: {
+      source: publishYear,
+      type: 'data'
+    },
+    executives: {
+      // This is an expensive call
+      ttl: 1000 * 60 * 60 * 24 * 3,
+      parsers: 'json',
+      source: `${
+        process.env.DATA_UI_LOCATION
+      }/api/v01/officer_salary/?publishyear__in=${publishYear},${publishYear -
+        1}&limit=0&username=${process.env.DATA_UI_USERNAME}&api_key=${
+        process.env.DATA_UI_API_KEY
+      }`,
+      transform: d => {
+        let transformed = transformExecutives(d, {
+          publishYear,
+          headshotFormat: 'jpg',
+          headshots: path.join(__dirname, 'assets', 'images', 'headshots')
+        });
+
+        // Want to write out for the application/client and a CSV version for print,
+        // but the `output` option doesn't make that easy so we do it here
+        fs.mkdirpSync('scratch');
+        _.each(
+          printExecutives(transformed, {
+            publishYear
+          }),
+          (csv, id) => {
+            fs.writeFileSync(`scratch/executives-${id}.csv`, csv);
+          }
+        );
+
+        return transformed;
+      },
+      output: 'assets/data/executives.json'
     }
 
     // Example external data source

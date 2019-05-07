@@ -1,0 +1,49 @@
+/**
+ * Hero overrides/styles
+ */
+
+.hero h1 {
+  margin: 0 auto 0.5em;
+  font-size: 4em;
+  line-height: 0.5em;
+  margin-bottom: 0.5em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 5.55em;
+    line-height: 0.5em;
+  }
+
+  .sub-title {
+    display: inline-block;
+    font-size: 0.45em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    line-break: 0.85em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.4em;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 0.55em;
+    }
+
+    sup {
+      display: inline-block;
+      font-size: 0.5em;
+      vertical-align: super;
+      padding-left: 0.15em;
+      margin-right: -0.5em;
+    }
+  }
+}
+
+.intro-paragraph {
+  margin-top: -1em;
+  margin-bottom: 4em;
+}
+
+p.lead.container-md {
+  font-size: 1.25em;
+  width: 100% !important;
+}

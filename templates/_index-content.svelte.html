@@ -1,16 +1,161 @@
-
 <div class="strib-styles ssa ssb ssc">
   <section class="container-lg">
-    <p>Content goes here.</p>
+    <header class="hero">
+      <h1>Star Tribune</h1>
+      <h1>Top Executives</h1>
 
+      <h1>
+        <span class="sub-title">The 28<sup>th</sup> annual report</span>
+      </h1>
+
+      <p class="lead container-md">
+        TKTK
+      </p>
+
+      <div class="byline">
+        <address>
+          By
+          <a
+            rel="author"
+            href="http://www.startribune.com/patrick-kennedy/10645186/"
+            >Patrick Kennedy</a
+          >
+        </address>
+        <span class="spacer"></span>
+        Star Tribune
+        <span class="spacer-alt"></span>
+        <time pubdate datetime="2019-07-22T00:00:00">------, 2019</time>
+      </div>
+
+      <div class="sharing-placeholder">
+        <!-- share -->
+      </div>
+    </header>
+
+    <main class="top-executives">
+      <div class="controls">
+        <h1 aria-label="controls-form" class="sr-only">
+          Controls to adjust list of executives
+        </h1>
+
+        <form id="controls-form">
+          <div class="inline-form-element">
+            <div id="show-list-type" role="group">
+              <label for="show-list-type">Show:</label>
+              <button type="button" data-value="" class="active">
+                Top 50 CEOs
+              </button>
+              <button type="button" data-value="top-female">
+                Top female executives
+              </button>
+              <button type="button" data-value="top-non-ceo">
+                Top non-CEOs
+              </button>
+            </div>
+          </div>
+
+          <div class="inline-form-element">
+            <div id="filter-category" role="group">
+              <label for="filter-category">Filter:</label>
+              <button type="button" data-value="" class="active">All</button>
+
+              {#each categories as category, ci}
+              <button
+                class="unique category-color-{ ci + 1 }"
+                type="button"
+                data-value="{ kebabCase(category) }"
+              >
+                { category }
+              </button>
+              {/each}
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <h1 aria-label="executives-list" class="sr-only">List of executives</h1>
+      <div class="executives-list">
+        <h1 class="sub-list-title ceo-title">Top 50 CEOs</h1>
+
+        {#each ceoTop as c}
+        <Executive
+          officer="{ c }"
+          publishYear="{ publishYear }"
+          categories="{ categories }"
+          executiveClass="executive-ceo"
+        />
+        {/each}
+
+        <h1 class="sub-list-title female-executive-title">
+          Top female executives
+        </h1>
+
+        {#each femaleExecutives as f}
+        <Executive
+          officer="{ f }"
+          publishYear="{ publishYear }"
+          categories="{ categories }"
+          executiveClass="executive-female"
+        />
+        {/each}
+
+        <h1 class="sub-list-title non-ceo-title">Non-CEO executives</h1>
+
+        {#each nonCeoTop as n}
+        <Executive
+          officer="{ n }"
+          publishYear="{ publishYear }"
+          categories="{ categories }"
+          executiveClass="executive-non-ceo"
+        />
+        {/each}
+      </div>
+    </main>
+
+    <footer class="container-md">
+      <div class="credits">
+        <p>
+          <b>Methodology:</b> Information on the largest CEO pay packages comes
+          from the company's annual proxy or other corporate filing with the
+          Securities and Exchange Commission. The Star Tribune counts total
+          compensation as the sum of salary, bonus, cash-based incentive plan
+          compensation, miscellaneous compensation, and the value of exercised
+          stock options and restricted stock that has vested during the year.
+        </p>
+
+        <p>
+          The SEC prescribes companies to disclose executive compensation in
+          they summary compensation table of the proxy as salary, bonus,
+          cash-based incentive plan compensation, miscellaneous compensation,
+          and the grant date value of new stock options and restricted stock
+          awards.
+        </p>
+
+        <p>
+          The newly required CEO pay ratio is based on the CEO’s total
+          compensation from the summary compensation table as prescribed by the
+          SEC.. Due to timing or company size half the company's have not yet
+          reported their CEO pay ration and median employee compensation.
+        </p>
+
+        <p>
+          Star Tribune graphic: Patrick Kennedy, Alan Palazzolo, Jamie Hutt,
+          David Braunger, Billy Steve Clayton
+        </p>
+      </div>
+    </footer>
   </section>
 </div>
 
-
-
-
 <script>
+  import _ from "lodash";
+  import Executive from "./shared/_executive.svelte.html";
+
   export default {
+    components: {
+      Executive
+    },
+
     oncreate() {
       // For content that lives in the CMS directly, we hack
       // around the share bits by removing it before we load
@@ -23,6 +168,48 @@
       if (this.get().attachShare) {
         this.get().attachShare();
       }
+    },
+
+    computed: {
+      // Top 50
+      ceoTop: ({ executives, publishYear }) => {
+        return _.take(
+          _.sortBy(executives.ceo, o => o.salaries[publishYear].rank),
+          50
+        );
+      },
+
+      // Top non-ceo
+      nonCeoTop: ({ executives, publishYear }) => {
+        return _.take(
+          _.sortBy(executives.nonceo, o => o.salaries[publishYear].rank),
+          10
+        );
+      },
+
+      // Female executies
+      femaleExecutives: ({ executives, publishYear }) => {
+        return _.take(
+          _.sortBy(executives.female, o => o.salaries[publishYear].rank),
+          10
+        );
+      },
+
+      // All categories
+      categories: ({ executives }) => {
+        return _.filter(_.uniq(_.map(executives.ceo, c => c.company.category)));
+      }
+    },
+
+    helpers: {
+      kebabCase: _.kebabCase
+    },
+
+    // Default data
+    data: () => {
+      return {
+        publishYear: 2019
+      };
     }
   };
 </script>

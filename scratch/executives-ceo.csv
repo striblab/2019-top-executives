@@ -1,0 +1,54 @@
+rank,name,title,company,stock,total_pay,total_pay_2018,percent_change,salary,bonus,misc,stock_expense,shares_vesting,combined_stock_awards,one_year_return,ceo_pay_ratio,median_employee_pay,footnotes
+1,Patrick McHale,"P, CEO",Graco Inc.,GGG,34881029,47164332,-26.04,816000,1224000,14411,,32826618,32826618,-6.3,103,62260,
+2,"Douglas Baker, Jr.","Ch, CEO",Ecolab Inc.,ECL,26854335,22348908,20.16,1278125,2284000,254004,17428886,5609320,23038206,11.1,265,54285,
+3,"Benjamin G.S. Fowke, III","Ch, P, CEO",Xcel Energy Inc.,XEL,26161963,17285689,51.35,1250000,2883400,59124,,21969439,21969439,5.8,112,108946,
+4,Hubert Joly,"Ch, CEO",Best Buy Co. Inc.,BBY,24503466,22503502,8.89,1275000,4240650,207497,,18780319,18780319,-2,605,28500,
+5,Brian Cornell,"Ch, CEO",Target Corp.,TGT,22553951,19153827,17.75,1384615,5266195,557376,,15345765,15345765,0.9,767,22439,
+6,David S. Wichmann,CEO,UnitedHealth Group Inc.,UNH,21466890,83200154,-74.2,1300000,5390600,316330,,14459960,14459960,14.5,316,57412,
+7,Scott W. Wine,"Ch, CEO",Polaris Industries Inc.,PII,20816073,2930402,610.35,1006923,1290000,202894,17848359,467897,18316256,-36.8,173,53892,
+8,Omar Ishrak,"Ch, CEO",Medtronic PLC,MDT,19171266,16348456,17.27,1641583,8109248,150569,4282090,4987776,9269866,0.07,239,73693,
+9,James M. Cracchiolo,"Ch, CEO",Ameriprise Financial Inc.,AMP,16503542,60615425,-72.77,1025000,6386000,619971,0,8472571,8472571,-36.8,272,94570,
+10,Andrew Cecere,"Ch, P, CEO",U.S. Bancorp,USB,14143362,15957348,-11.37,1100000,2663760,44243,5061122,5274237,10335359,-12.4,230,58354,
+11,Jerry Mattys,CEO,Tactile Systems Technology Inc.,TCMD,13761017,5004899,174.95,502115,547074,,11425783,1286045,12711828,57.2,27,77245,
+12,Lee Schram,former CEO,Deluxe Corp.,DLX,11717868,11264519,4.02,999166,1102520,25685,7045284,2545213,9590497,-49,108.3,59336,"Schram retired as CEO on November 25, 2018 and succeeded by Barry McCarthy, a long-time executive at First Data"
+13,John P. Wiehoff,"Executive chairman, former P, CEO",C.H. Robinson Worldwide Inc.,CHRW,9312374,3184507,192.43,1167000,2427366,20490,,5697518,5697518,-3.6,135,63270,"Wiehoff became executive chairman and retired as president and CEO effective May 9, 2019. Robert Biesterfeld was named his successor as CEO."
+14,H. Chris Killingstad,"P, CEO",Tennant Co.,TNC,8537665,1248647,583.75,765653,945345,50288,6318456,457923,6776379,-27.4,86,49436,
+15,Archie Black,"P, CEO",SPS Commerce Inc.,SPSC,8107154,4688005,72.93,495000,890000,8250,4014277,2699627,6713904,69.5,61,73759,
+16,James P. Snee,"Ch, P, CEO",Hormel Foods Corp.,HRL,5530604,3114003,77.6,882750,2956237,139577,1552040,0,1552040,46.8,147,43131,
+17,Gary R. Maharaj,"P, CEO",Surmodics Inc.,SRDX,5428179,1498355,262.28,550725,768262,8250,2677212,1423730,4100942,140.8,36,62294,The board of directors awarded Maharaj and other executives discretionary bonuses in recognition of success in achieving strategic initiatives.
+18,Michael F. Roman,CEO,3M Co.,MMM,5195051,3389171,53.28,1049976,1431503,141771,1119087,1452714,2571801,-16.9,302,57313,"The  total compensation used for the CEO pay ratio rule was a combination of Michael Roman's and Inge Thulin's compensation: $17,320,459."
+19,Tod Carpenter,"Ch, P, CEO",Donaldson Co. Inc.,DCI,4982552,2496882,99.55,942308,1598571,173065,244640,2023968,2268608,2,178,33271,
+20,"James ""Joc"" O'Rourke","P, CEO",Mosaic Co.,MOS,4794033,3948635,21.41,178750,2978300,769009,,867974,867974,14.2,253,41594,"Part of O'Rourke's other compensation includes $273,330 for relocation expenses"
+21,Charles Kummeth,"P, CEO",Bio-Techne Corp.,TECH,4752697,2669162,78.06,911000,1610925,42860,,2187912,2187912,27.1,131,73840,
+22,Chad R. Abraham,CEO,Piper Jaffray Companies,PJC,4648310,5655377,-17.81,550000,1952500,109567,,2036243,2036243,-19.5,31,179011,
+23,James J. Owens,"P, CEO",H.B. Fuller Co.,FUL,4613331,5861828,-21.3,1112408,948233,373222,0,2179468,2179468,-13.7,101,57333,
+24,Jeffrey L. Harmening,"Ch, CEO",General Mills Inc.,GIS,4056798,3305731,22.72,1200000,1163520,86651,319835,1286792,1606627,-21.7,145,54828,
+25,Shelly Ibach,"P, CEO",Sleep Number Corp.,SNBR,3592983,4195630,-14.36,926923,589837,31620,596820,1447783,2044603,-15.6,85,52306,
+26,Hugh Sawyer,"P, CEO",Regis Corp.,RGS,3078332,787599,290.85,950000,1966500,161832,,,0,61.1,146,21034,
+27,Richard M. Olson,"Ch, P, CEO",The Toro Co.,TTC,2829831,2816430,0.48,875000,918803,171279,,864749,864749,-9.2,117,43302,
+28,Brett D. Heffes,CEO,Winmark Corp.,WINA,2250008,1468549,53.21,315000,300000,10100,1624908,,1624908,23.4,12.2,77701,
+29,Daniel L. Florness,"P, CEO",Fastenal Co.,FAST,2019094,1637231,23.32,592500,1423750,2844,0,0,0,-1.6,62,39229,
+30,Victoria Holt,"P, CEO",Proto Labs Inc.,PRLB,1992184,1479693,34.63,550000,534875,11000,,896309,896309,9.5,74.3,48400,
+31,Beth A. Wozniak,CEO,nVent Electric PLC,NVT,1907729,1195058,59.63,716193,843249,52362,,295925,295925,-10.7,,,"because nVent PLC is a recent public company, spinning off from Pentair on April 17, 2018,  they did not have to disclose the CEO pay ratio this year.
+Total return is since April 17."
+32,"Alan R, Hodnik","Ch, CEO",Allete Inc.,ALE,1812310,1759458,3,633421,726906,132205,,319778,319778,5.6,36,97018,
+33,Charles MacFarlane,"P, CEO",Otter Tail Corp.,OTTR,1795125,2746674,-34.64,650000,1137500,7625,0,,0,15.1,51,65537,
+34,David Ossip,CEO,Ceridian HCM Holding Inc.,CDAY,1544358,,,700000,800000,44358,,,0,10.5,,,"stock return is since Ceridian HCM's IPO on April 26, 2018. The IPO and related equity offering was the largest IPO in Minnesota history."
+35,Scott R. Ward,"Ch, P, CEO",Cardiovascular Systems Inc.,CSII,1474117,1846617,-20.17,650000,477728,,,346389,346389,0.34,36,96091,
+36,Ron Konezny,"P, CEO",Digi International Inc.,DGII,1410387,1216242,15.96,465000,285975,11775,,647637,647637,26.9,17,102233,
+37,Jerry Baack,"Ch, P, CEO",Bridgewater Bancshares Inc.,BWB,1278533,,,526247,480000,272286,,,0,,,,
+38,Jeffrey Graves,"P, CEO",MTS Systems Corp.,MTSC,1225986,1477347,-17.01,691348,415683,20892,,98063,98063,4.7,55,51996,The compenstion committee used downward discretion on the annual cash incentive award because of the impact of the Tax Cuts and Jobs Act on the EPS component of performance goals.
+39,Keri Jones,"P, CEO",Christopher & Banks Corp.,CBK,1061897,,,619231,300000,88642,,54024,54024,-2,239,8057,"Keri Jones got a $300,000 signing bonus and $61,518 in relocation expenses when she joined Christopher & Banks as president and CEO on March 12, 2018. She succeeded interim president and CEO Joel Waller."
+40,Brandon Elliott,CEO,Northern Oil and Gas Inc.,NOG,838033,,,306398,0,53667,,477968,477968,10.2,8.3,139666,Brandon Elliott was named CEO of Northern Oil and Gas in July 2018
+41,Timothy Herbert,"P, CEO",Inspire Medical Systems Inc.,INSP,836762,,,417606,419156,,,,0,69.1,,,"Inspire Medical's total return is since its IPO on May 3, 2018"
+42,Federico A. Tripodi,former CEO,Calyxt Inc.,CLXT,768704,534750,43.75,227413,0,541291,,,0,-36.5,,,"Tripodi resigned as CEO of Calyxt on Aug. 22, 2018. James Blome was named his successor on October 1, 2018
+Calyxt went public on April 23, 2018 total return is from then."
+43,Mark Walchirk,"P, CEO",Patterson Cos. Inc.,PDCO,742339,,,383591,100000,258748,,,0,-45.2,115,55269,"Walchirk became presdent and CEO of Patterson on November 20, 2017. He got $190,978 in relocation expenses, a $100,000 signing bonus and a $2 million equity grant as inducment to join the company from McKesson Corp.
+For purposes of the CEO pay ratio calculation Patterson annualized Walchirk's pay to be $6,347,844, excluding his inducements to join the company Patterson says his annual compensation would have been 4,007,662  and the CEO pay ratio 73:1 instead of 115:1"
+44,Subodh Kulkarni,"P, CEO",CyberOptics Corp.,CYBE,677520,677818,-0.04,375000,294270,8250,,,0,,,,
+45,Kristine A. Glancy,"P, CEO, secretary",Insignia Systems Inc.,ISIG,564951,553960,1.98,306350,258601,,,,0,25.2,,,
+46,Rick Pauls,"P, CEO",DiaMedica Therapeutics Inc.,DMAC,492403,,,315208,163875,13320,,,0,-40.3,,,
+47,Vernon Hanzlik,"P, CEO",Qumu Corp.,QUMU,406263,457685,-11.24,390800,0,15463,,,0,-19.8,,,
+48,Bradley C. Krehbiel,"P, CEO",HMN Financial Inc.,HMNF,387030,373146,3.72,323067,41278,22685,,,0,2.7,,,
+49,Bill Otis,"P, CEO","Nuvera Communications, Inc",NUVR,369933,,,290000,45609,34324,,,0,5.9,,,
+50,Randall D. Sampson,"P, CEO",Canterbury Park Holding Corp.,CPHC,349298,367386,-4.92,263104,60949,25245,,,0,-13.1,,,

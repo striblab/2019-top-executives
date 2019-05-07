@@ -1,0 +1,218 @@
+<div
+  class="executive category-color-{ officer.company.category ? categories.indexOf(officer.company.category) + 1 : 'none' } { executiveClass }"
+  data-officer-id="{ officer.id }"
+  data-company-id="{ officer.company.coid }"
+  data-gender="{ officer.gender }"
+  data-category="{ kebabCase(officer.company.category) }"
+>
+  <div class="row">
+    <div class="col col-20 col-md-30">
+      <div class="row">
+        <div class="col col-100 col-md-50">
+          <div class="rank">
+            { officer.salaries[publishYear].rank }
+          </div>
+        </div>
+
+        <div class="col col-100 col-md-50">
+          {#if officer.hasimage }
+          <img
+            src="{ assets }images/headshots/{ officer.id }.jpg"
+            alt="Headshot of { officerName(officer) }"
+          />
+          {:else}
+          <img
+            src="{ assets }images/generic-headshot.jpg"
+            alt="Generic headshot image"
+          />
+          {/if}
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-80 col-md-70">
+      <h2>{ officerName(officer) }</h2>
+
+      <div class="officer-title">
+        { officer.salaries[publishYear].title } of { officer.company.name }
+      </div>
+
+      <p>{ officer.company.shortdesc }</p>
+
+      {#if officer.salaries[publishYear].footnotes }
+      <p class="footnotes">{ officer.salaries[publishYear].footnotes }</p>
+      {/if}
+    </div>
+  </div>
+
+  <div class="row data-row">
+    <div class="col col-0 col-md-15">&nbsp;</div>
+
+    <div class="col col-100 col-md-35">
+      <ul>
+        <li class="main-financial">
+          <span class="main-financial-value">
+            ${
+            millions(officer.salaries[publishYear].calculated_total_value).toLocaleString()
+            }
+          </span>
+          million in total compensation
+        </li>
+
+        <li class="main-financial">
+          <span class="main-financial-value">
+            { percentChange(officer.salaries, publishYear,
+            'calculated_total_value') ? percentChange(officer.salaries,
+            publishYear, 'calculated_total_value').toLocaleString() + '%' :
+            'n/a' }
+          </span>
+          change from { publishYear - 1}
+        </li>
+
+        <li>
+          CEO pay ratio {#if officer.salaries[publishYear].ceopayratio }
+          <strong
+            >{ officer.salaries[publishYear].ceopayratio.toLocaleString()
+            }:1</strong
+          >
+          {:else}
+          <strong><span title="Unknown pay ratio">&mdash</span></strong>
+          {/if}
+        </li>
+
+        <li>
+          Median compensation {#if
+          officer.salaries[publishYear].medianemployeepay }
+          <strong
+            >${ officer.salaries[publishYear].medianemployeepay.toLocaleString()
+            }</strong
+          >
+          {:else}
+          <strong
+            ><span title="Unknown median employee pay">&mdash</span></strong
+          >
+          {/if}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col col-100 col-md-25">
+      <ul>
+        <li>
+          Salary
+          <strong
+            >${ officer.salaries[publishYear].salary ?
+            millions(officer.salaries[publishYear].salary || 0).toLocaleString()
+            + ' million' : '' }</strong
+          >
+        </li>
+
+        <li>
+          Bonus
+          <strong
+            >${ (officer.salaries[publishYear].bonus || 0).toLocaleString()
+            }</strong
+          >
+        </li>
+
+        <li>
+          Non-equity IPC
+          <strong
+            >${ (officer.salaries[publishYear].nonequityipc ||
+            0).toLocaleString() }</strong
+          >
+        </li>
+
+        <li>
+          All other
+          <strong
+            >${ (officer.salaries[publishYear].allothertotal ||
+            0).toLocaleString() }</strong
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="col col-100 col-md-25">
+      <ul>
+        <li>
+          Options exercised
+          <strong
+            >${ officer.salaries[publishYear].stockexpense ?
+            millions(officer.salaries[publishYear].stockexpense ||
+            0).toLocaleString() + ' million' : '0' }
+          </strong>
+        </li>
+
+        <li>
+          Shares vesting
+          <strong
+            >${ (officer.salaries[publishYear].sharesvesting ||
+            0).toLocaleString() }</strong
+          >
+        </li>
+
+        <li>
+          Stock change
+          <strong
+            >{ (officer.salaries[publishYear].stockchange || 0).toLocaleString()
+            }%</strong
+          >
+        </li>
+
+        <li>
+          { publishYear - 1 } Top-50 ranking:
+          <strong
+            >{ officer.salaries[publishYear - 1] ? officer.salaries[publishYear
+            - 1].rank : 'n/a' }</strong
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  import _ from "lodash";
+
+  export default {
+    helpers: {
+      kebabCase: _.kebabCase,
+
+      // Officer name
+      officerName(o) {
+        return `${
+          o.salut && !o.salut.match(/(mr|ms|mrs)/i) ? o.salut + " " : ""
+        }${_.filter([o.first, o.middle, o.last]).join(" ")}${
+          o.lineage ? ", " + o.lineage : ""
+        }`.replace(/\s+/, " ");
+      },
+
+      // Format in millions
+      millions(i) {
+        if (!i) {
+          return 0;
+        }
+        return Math.round((i / 1000000) * 10) / 10;
+      },
+
+      // Find percent change
+      percentChange(set, year, value) {
+        let c = set[year] ? set[year][value] : 0;
+        let p = set[year - 1] ? set[year - 1][value] : undefined;
+        if (!p) {
+          return undefined;
+        }
+        return Math.round(((c - p) / p) * 100 * 10) / 10;
+      }
+    },
+
+    data() {
+      return {
+        //assets: '//static.startribune.com/news/projects/all/2019-top-executives/assets/',
+        assets: "./assets/",
+        genericImage: "images/generic-headshot.jpg"
+      };
+    }
+  };
+</script>

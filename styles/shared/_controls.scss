@@ -1,0 +1,139 @@
+/**
+ * Filters and sorting.
+ */
+
+#controls-form {
+  padding-bottom: 1em;
+  border-bottom: 3px solid #676767;
+  margin-bottom: 2em;
+  text-align: center;
+
+  .inline-form-element {
+    display: flex;
+
+    label {
+      display: inline-block;
+      margin-right: 1em;
+    }
+
+    button {
+      display: inline-block;
+      padding: 0.5em;
+    }
+  }
+}
+
+.controls {
+  margin-bottom: 1.5em;
+  display: none;
+
+  button {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    color: $color-text;
+    border: 2px solid transparent;
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 0.3);
+    }
+  }
+
+  #show-list-type {
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+
+    button,
+    label {
+      @media (max-width: 767px) {
+        width: 49%;
+        margin-right: 0;
+      }
+    }
+
+    button {
+      background-color: #bbbbbb;
+
+      &:hover {
+        background-color: darken(#bbbbbb, 20%);
+        border: 2px solid #767676;
+      }
+
+      &.active {
+        color: #ffffff;
+        background-color: #454545;
+      }
+    }
+
+    label {
+      background-color: $color-white;
+
+      @media (max-width: 767px) {
+        margin-top: 0.25em;
+      }
+    }
+  }
+
+  #filter-category {
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    button,
+    label {
+      @media (max-width: 767px) {
+        width: 49%;
+      }
+
+      background-color: $color-white;
+
+      &.active {
+        background-color: $color-white;
+        border: 2px solid #767676;
+      }
+
+      &.unique {
+        margin-right: 0.3em;
+        @media (max-width: 767px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    label {
+      background-color: #ffffff;
+
+      @media (max-width: 767px) {
+        margin-top: 0.25em;
+        margin-right: 0;
+      }
+    }
+
+    @each $c in $category-colors {
+      $i: index($category-colors, $c);
+
+      .category-color-#{$i} {
+        background-color: $c;
+        border: 2px solid transparent;
+
+        &.active,
+        &:hover {
+          background-color: darken($c, 20%);
+          border: 2px solid #767676;
+        }
+      }
+    }
+  }
+}
+
+// When interactive, show
+.is-interactive .controls {
+  display: block;
+}
