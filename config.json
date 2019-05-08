@@ -3,34 +3,23 @@
 
   "projectIdentifier": "2019-top-executives",
 
-  "data": {
-    "content": "./content.json",
-    "pkg": "./package.json"
-  },
-
   "cms": {
     "defaultArticleContentTemplateRewriteClass": "article-lcd-body-content",
     "pages": [
-      
       {
         "id": "index",
-        "articleId": "NEEDS-ARTICLE-ID",
-        "lcd": "NEEDS-LCD-ID",
+        "articleId": "506438591",
+        "lcd": "506438711",
         "default": true
       }
-      
     ]
   },
-
 
   "styles": {
-    "globals": [
-    ]
+    "globals": []
   },
   "js": {
-    "globals": [
-      "https://cdn.polyfill.io/v2/polyfill.min.js"
-    ]
+    "globals": ["https://cdn.polyfill.io/v2/polyfill.min.js"]
   },
   "publishToken": "481865043a88b9aed71356bcd0544538",
   "publish": {
