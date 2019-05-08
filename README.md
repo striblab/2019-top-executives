@@ -15,13 +15,10 @@ Make sure the following values are environment variables, these can be defined i
 - `DATA_UI_LOCATION`: Base URL to [Data UI](https://github.com/striblab/data-ui); should be something like `https://example.example/data-ui/`
 - `DATA_UI_USERNAME`: Username for your API key. If you do not have one, get someone to make you one.
 - `DATA_UI_API_KEY`: API key.
-- `BUSINESS_DB_URI`: The URI to the database.
 
 ## Print
 
-_TODO_
-
-A CSV file that is useful for the print version will be output to `scratch/executives.csv`. This is done when the `gulp html` command is run, which is apart of any build related command like `gulp develop` or `gulp publish`.
+A CSV file that is useful for the print version will be output to `scratch/executives-*.csv`. This is done when the `gulp html` command is run, which is a part of any build related command like `gulp develop` or `gulp publish`.
 
 ## Development
 
@@ -39,6 +36,10 @@ More details: [docs/development.md](./docs/development.md).
 The `gulp deploy` command will clear out the build, re-build the project, and publish it up to `static.startribune.com`. Use `gulp deploy --production` to put in a production spot. Use `gulp publish:open` to open the publish URL in a browser.
 
 If using CMS integration, run the `gulp cms:lcd --get=content` command to get the values to go into the LCD.
+
+When publishing, or running through `news-platform`, the path to assets will have to be the full S3 path. The places this will be changed are:
+
+- `templates/shared/_executive.svelte.html`: In the `data()` section at the bottom.
 
 More details: [docs/publishing.md](./docs/publishing.md).
 
