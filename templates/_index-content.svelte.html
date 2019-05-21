@@ -196,8 +196,13 @@
       },
 
       // All categories
-      categories: ({ executives }) => {
-        return _.filter(_.uniq(_.map(executives.ceo, c => c.company.category)));
+      categories: ({ executives, validCagtegories }) => {
+        return _.filter(
+          _.uniq(_.map(executives.ceo, c => c.company.category)),
+          c => {
+            return c && ~validCagtegories.indexOf(c);
+          }
+        );
       }
     },
 
@@ -208,7 +213,15 @@
     // Default data
     data: () => {
       return {
-        publishYear: 2019
+        publishYear: 2019,
+        validCagtegories: [
+          "Retail/Service",
+          "Health/Medical",
+          "Manufacturing",
+          "Utility",
+          "Financial Service",
+          "Information Technology"
+        ]
       };
     }
   };

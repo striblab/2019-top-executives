@@ -14,41 +14,41 @@ rank,name,title,company,stock,total_pay,total_pay_2018,percent_change,salary,bon
 13,John P. Wiehoff,"Executive chairman, former P, CEO",C.H. Robinson Worldwide Inc.,CHRW,9312374,3184507,192.43,1167000,2427366,20490,,5697518,5697518,-3.6,135,63270,"Wiehoff became executive chairman and retired as president and CEO effective May 9, 2019. Robert Biesterfeld was named his successor as CEO."
 14,H. Chris Killingstad,"P, CEO",Tennant Co.,TNC,8537665,1248647,583.75,765653,945345,50288,6318456,457923,6776379,-27.4,86,49436,
 15,Archie Black,"P, CEO",SPS Commerce Inc.,SPSC,8107154,4688005,72.93,495000,890000,8250,4014277,2699627,6713904,69.5,61,73759,
-16,James P. Snee,"Ch, P, CEO",Hormel Foods Corp.,HRL,5530604,3114003,77.6,882750,2956237,139577,1552040,0,1552040,46.8,147,43131,
-17,Gary R. Maharaj,"P, CEO",Surmodics Inc.,SRDX,5428179,1498355,262.28,550725,768262,8250,2677212,1423730,4100942,140.8,36,62294,The board of directors awarded Maharaj and other executives discretionary bonuses in recognition of success in achieving strategic initiatives.
-18,Michael F. Roman,CEO,3M Co.,MMM,5195051,3389171,53.28,1049976,1431503,141771,1119087,1452714,2571801,-16.9,302,57313,"The  total compensation used for the CEO pay ratio rule was a combination of Michael Roman's and Inge Thulin's compensation: $17,320,459."
-19,Tod Carpenter,"Ch, P, CEO",Donaldson Co. Inc.,DCI,4982552,2496882,99.55,942308,1598571,173065,244640,2023968,2268608,2,178,33271,
-20,"James ""Joc"" O'Rourke","P, CEO",Mosaic Co.,MOS,4794033,3948635,21.41,178750,2978300,769009,,867974,867974,14.2,253,41594,"Part of O'Rourke's other compensation includes $273,330 for relocation expenses"
-21,Charles Kummeth,"P, CEO",Bio-Techne Corp.,TECH,4752697,2669162,78.06,911000,1610925,42860,,2187912,2187912,27.1,131,73840,
-22,Chad R. Abraham,CEO,Piper Jaffray Companies,PJC,4648310,5655377,-17.81,550000,1952500,109567,,2036243,2036243,-19.5,31,179011,
-23,James J. Owens,"P, CEO",H.B. Fuller Co.,FUL,4613331,5861828,-21.3,1112408,948233,373222,0,2179468,2179468,-13.7,101,57333,
-24,Jeffrey L. Harmening,"Ch, CEO",General Mills Inc.,GIS,4056798,3305731,22.72,1200000,1163520,86651,319835,1286792,1606627,-21.7,145,54828,
-25,Shelly Ibach,"P, CEO",Sleep Number Corp.,SNBR,3592983,4195630,-14.36,926923,589837,31620,596820,1447783,2044603,-15.6,85,52306,
-26,Hugh Sawyer,"P, CEO",Regis Corp.,RGS,3078332,787599,290.85,950000,1966500,161832,,,0,61.1,146,21034,
-27,Richard M. Olson,"Ch, P, CEO",The Toro Co.,TTC,2829831,2816430,0.48,875000,918803,171279,,864749,864749,-9.2,117,43302,
-28,Brett D. Heffes,CEO,Winmark Corp.,WINA,2250008,1468549,53.21,315000,300000,10100,1624908,,1624908,23.4,12.2,77701,
-29,Daniel L. Florness,"P, CEO",Fastenal Co.,FAST,2019094,1637231,23.32,592500,1423750,2844,0,0,0,-1.6,62,39229,
-30,Victoria Holt,"P, CEO",Proto Labs Inc.,PRLB,1992184,1479693,34.63,550000,534875,11000,,896309,896309,9.5,74.3,48400,
-31,Beth A. Wozniak,CEO,nVent Electric PLC,NVT,1907729,1195058,59.63,716193,843249,52362,,295925,295925,-10.7,,,"because nVent PLC is a recent public company, spinning off from Pentair on April 17, 2018,  they did not have to disclose the CEO pay ratio this year.
+16,Craig Dahl,"Ch, P, CEO",TCF Financial Corp.,TCF,7762196,1564161,396.25,926481,1525636,76518,1184625,4048936,5233561,-2.5,132.7,47181,In January TCF announced a transformational merger with Chemical Financial. Dahl will remain CEO of the combined company whose headquarters will be in Detroit but expect Dahl to manage operations from multiple locations.
+17,James P. Snee,"Ch, P, CEO",Hormel Foods Corp.,HRL,5530604,3114003,77.6,882750,2956237,139577,1552040,0,1552040,46.8,147,43131,
+18,Gary R. Maharaj,"P, CEO",Surmodics Inc.,SRDX,5428179,1498355,262.28,550725,768262,8250,2677212,1423730,4100942,140.8,36,62294,The board of directors awarded Maharaj and other executives discretionary bonuses in recognition of success in achieving strategic initiatives.
+19,Michael F. Roman,CEO,3M Co.,MMM,5195051,3389171,53.28,1049976,1431503,141771,1119087,1452714,2571801,-16.9,302,57313,"The  total compensation used for the CEO pay ratio rule was a combination of Michael Roman's and Inge Thulin's compensation: $17,320,459."
+20,Tod Carpenter,"Ch, P, CEO",Donaldson Co. Inc.,DCI,4982552,2496882,99.55,942308,1598571,173065,244640,2023968,2268608,2,178,33271,
+21,Arthur Przybyl,"P, CEO",ANI Pharmaceuticals Inc.,ANIP,4893510,1763498,177.49,726925,675000,,2455329,1036256,3491585,-30.2,80,52389,
+22,"James ""Joc"" O'Rourke","P, CEO",Mosaic Co.,MOS,4794033,3948635,21.41,178750,2978300,769009,,867974,867974,14.2,253,41594,"Part of O'Rourke's other compensation includes $273,330 for relocation expenses"
+23,Charles Kummeth,"P, CEO",Bio-Techne Corp.,TECH,4752697,2669162,78.06,911000,1610925,42860,,2187912,2187912,27.1,131,73840,
+24,Chad R. Abraham,CEO,Piper Jaffray Companies,PJC,4648310,5655377,-17.81,550000,1952500,109567,,2036243,2036243,-19.5,31,179011,
+25,James J. Owens,"P, CEO",H.B. Fuller Co.,FUL,4613331,5861828,-21.3,1112408,948233,373222,0,2179468,2179468,-13.7,101,57333,
+26,Jeffrey L. Harmening,"Ch, CEO",General Mills Inc.,GIS,4056798,3305731,22.72,1200000,1163520,86651,319835,1286792,1606627,-21.7,145,54828,
+27,Shelly Ibach,"P, CEO",Sleep Number Corp.,SNBR,3592983,4195630,-14.36,926923,589837,31620,596820,1447783,2044603,-15.6,85,52306,
+28,John Stauch,"P, CEO",Pentair PLC,PNR,3237451,,,852618,1292799,41474,,1050560,1050560,-18.5,105,58564,
+29,Hugh Sawyer,"P, CEO",Regis Corp.,RGS,3078332,787599,290.85,950000,1966500,161832,,,0,61.1,146,21034,
+30,Richard M. Olson,"Ch, P, CEO",The Toro Co.,TTC,2829831,2816430,0.48,875000,918803,171279,,864749,864749,-9.2,117,43302,
+31,Joseph Puishys,"P, CEO",Apogee Enterprises Inc.,APOG,2351318,9014554,-73.92,935000,544264,43852,,828202,828202,-16.7,47,47393,
+32,Brett D. Heffes,CEO,Winmark Corp.,WINA,2250008,1468549,53.21,315000,300000,10100,1624908,,1624908,23.4,12.2,77701,
+33,Daniel L. Florness,"P, CEO",Fastenal Co.,FAST,2019094,1637231,23.32,592500,1423750,2844,0,0,0,-1.6,62,39229,
+34,Victoria Holt,"P, CEO",Proto Labs Inc.,PRLB,1992184,1479693,34.63,550000,534875,11000,,896309,896309,9.5,74.3,48400,
+35,Michael J. Happe,"P, CEO",Winnebago Industries Inc.,WGO,1918400,1858325,3.23,657692,855658,44082,,360968,360968,9,95,33925,
+36,Beth A. Wozniak,CEO,nVent Electric PLC,NVT,1907729,1195058,59.63,716193,843249,52362,,295925,295925,-10.7,,,"because nVent PLC is a recent public company, spinning off from Pentair on April 17, 2018,  they did not have to disclose the CEO pay ratio this year.
 Total return is since April 17."
-32,"Alan R, Hodnik","Ch, CEO",Allete Inc.,ALE,1812310,1759458,3,633421,726906,132205,,319778,319778,5.6,36,97018,
-33,Charles MacFarlane,"P, CEO",Otter Tail Corp.,OTTR,1795125,2746674,-34.64,650000,1137500,7625,0,,0,15.1,51,65537,
-34,David Ossip,CEO,Ceridian HCM Holding Inc.,CDAY,1544358,,,700000,800000,44358,,,0,10.5,,,"stock return is since Ceridian HCM's IPO on April 26, 2018. The IPO and related equity offering was the largest IPO in Minnesota history."
-35,Scott R. Ward,"Ch, P, CEO",Cardiovascular Systems Inc.,CSII,1474117,1846617,-20.17,650000,477728,,,346389,346389,0.34,36,96091,
-36,Ron Konezny,"P, CEO",Digi International Inc.,DGII,1410387,1216242,15.96,465000,285975,11775,,647637,647637,26.9,17,102233,
-37,Jerry Baack,"Ch, P, CEO",Bridgewater Bancshares Inc.,BWB,1278533,,,526247,480000,272286,,,0,,,,
-38,Jeffrey Graves,"P, CEO",MTS Systems Corp.,MTSC,1225986,1477347,-17.01,691348,415683,20892,,98063,98063,4.7,55,51996,The compenstion committee used downward discretion on the annual cash incentive award because of the impact of the Tax Cuts and Jobs Act on the EPS component of performance goals.
-39,Keri Jones,"P, CEO",Christopher & Banks Corp.,CBK,1061897,,,619231,300000,88642,,54024,54024,-2,239,8057,"Keri Jones got a $300,000 signing bonus and $61,518 in relocation expenses when she joined Christopher & Banks as president and CEO on March 12, 2018. She succeeded interim president and CEO Joel Waller."
-40,Brandon Elliott,CEO,Northern Oil and Gas Inc.,NOG,838033,,,306398,0,53667,,477968,477968,10.2,8.3,139666,Brandon Elliott was named CEO of Northern Oil and Gas in July 2018
-41,Timothy Herbert,"P, CEO",Inspire Medical Systems Inc.,INSP,836762,,,417606,419156,,,,0,69.1,,,"Inspire Medical's total return is since its IPO on May 3, 2018"
-42,Federico A. Tripodi,former CEO,Calyxt Inc.,CLXT,768704,534750,43.75,227413,0,541291,,,0,-36.5,,,"Tripodi resigned as CEO of Calyxt on Aug. 22, 2018. James Blome was named his successor on October 1, 2018
+37,"Alan R, Hodnik","Ch, CEO",Allete Inc.,ALE,1812310,1759458,3,633421,726906,132205,,319778,319778,5.6,36,97018,
+38,Charles MacFarlane,"P, CEO",Otter Tail Corp.,OTTR,1795125,2746674,-34.64,650000,1137500,7625,0,,0,15.1,51,65537,
+39,David Ossip,CEO,Ceridian HCM Holding Inc.,CDAY,1544358,,,700000,800000,44358,,,0,10.5,,,"stock return is since Ceridian HCM's IPO on April 26, 2018. The IPO and related equity offering was the largest IPO in Minnesota history."
+40,Scott R. Ward,"Ch, P, CEO",Cardiovascular Systems Inc.,CSII,1474117,1846617,-20.17,650000,477728,,,346389,346389,0.34,36,96091,
+41,Ron Konezny,"P, CEO",Digi International Inc.,DGII,1410387,1216242,15.96,465000,285975,11775,,647637,647637,26.9,17,102233,
+42,Jerry Baack,"Ch, P, CEO",Bridgewater Bancshares Inc.,BWB,1278533,,,526247,480000,272286,,,0,,,,
+43,Jeffrey Graves,"P, CEO",MTS Systems Corp.,MTSC,1225986,1477347,-17.01,691348,415683,20892,,98063,98063,4.7,55,51996,The compenstion committee used downward discretion on the annual cash incentive award because of the impact of the Tax Cuts and Jobs Act on the EPS component of performance goals.
+44,Keri Jones,"P, CEO",Christopher & Banks Corp.,CBK,1061897,,,619231,300000,88642,,54024,54024,-2,239,8057,"Keri Jones got a $300,000 signing bonus and $61,518 in relocation expenses when she joined Christopher & Banks as president and CEO on March 12, 2018. She succeeded interim president and CEO Joel Waller."
+45,Brandon Elliott,CEO,Northern Oil and Gas Inc.,NOG,838033,,,306398,0,53667,,477968,477968,10.2,8.3,139666,Brandon Elliott was named CEO of Northern Oil and Gas in July 2018
+46,Timothy Herbert,"P, CEO",Inspire Medical Systems Inc.,INSP,836762,,,417606,419156,,,,0,69.1,,,"Inspire Medical's total return is since its IPO on May 3, 2018"
+47,Federico A. Tripodi,former CEO,Calyxt Inc.,CLXT,768704,534750,43.75,227413,0,541291,,,0,-36.5,,,"Tripodi resigned as CEO of Calyxt on Aug. 22, 2018. James Blome was named his successor on October 1, 2018
 Calyxt went public on April 23, 2018 total return is from then."
-43,Mark Walchirk,"P, CEO",Patterson Cos. Inc.,PDCO,742339,,,383591,100000,258748,,,0,-45.2,115,55269,"Walchirk became presdent and CEO of Patterson on November 20, 2017. He got $190,978 in relocation expenses, a $100,000 signing bonus and a $2 million equity grant as inducment to join the company from McKesson Corp.
+48,Mark Walchirk,"P, CEO",Patterson Cos. Inc.,PDCO,742339,,,383591,100000,258748,,,0,-45.2,115,55269,"Walchirk became presdent and CEO of Patterson on November 20, 2017. He got $190,978 in relocation expenses, a $100,000 signing bonus and a $2 million equity grant as inducment to join the company from McKesson Corp.
 For purposes of the CEO pay ratio calculation Patterson annualized Walchirk's pay to be $6,347,844, excluding his inducements to join the company Patterson says his annual compensation would have been 4,007,662  and the CEO pay ratio 73:1 instead of 115:1"
-44,Subodh Kulkarni,"P, CEO",CyberOptics Corp.,CYBE,677520,677818,-0.04,375000,294270,8250,,,0,,,,
-45,Kristine A. Glancy,"P, CEO, secretary",Insignia Systems Inc.,ISIG,564951,553960,1.98,306350,258601,,,,0,25.2,,,
-46,Rick Pauls,"P, CEO",DiaMedica Therapeutics Inc.,DMAC,492403,,,315208,163875,13320,,,0,-40.3,,,
-47,Vernon Hanzlik,"P, CEO",Qumu Corp.,QUMU,406263,457685,-11.24,390800,0,15463,,,0,-19.8,,,
-48,Bradley C. Krehbiel,"P, CEO",HMN Financial Inc.,HMNF,387030,373146,3.72,323067,41278,22685,,,0,2.7,,,
-49,Bill Otis,"P, CEO","Nuvera Communications, Inc",NUVR,369933,,,290000,45609,34324,,,0,5.9,,,
-50,Randall D. Sampson,"P, CEO",Canterbury Park Holding Corp.,CPHC,349298,367386,-4.92,263104,60949,25245,,,0,-13.1,,,
+49,Mark S. Gorder,"P, CEO",IntriCon Corp.,IIN,694868,479180,45.01,430500,223393,40975,,,0,33.2,,,
+50,Subodh Kulkarni,"P, CEO",CyberOptics Corp.,CYBE,677520,677818,-0.04,375000,294270,8250,,,0,,,,
