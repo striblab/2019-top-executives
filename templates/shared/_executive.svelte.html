@@ -69,6 +69,7 @@
           change from { publishYear - 1}
         </li>
 
+        {#if executiveClass == 'executive-ceo' }
         <li>
           CEO pay ratio {#if officer.salaries[publishYear].ceopayratio }
           <strong
@@ -79,7 +80,9 @@
           <strong><span title="Unknown pay ratio">&mdash</span></strong>
           {/if}
         </li>
+        {/if}
 
+        {#if executiveClass == 'executive-ceo' }
         <li>
           Median compensation {#if
           officer.salaries[publishYear].medianemployeepay }
@@ -93,6 +96,7 @@
           >
           {/if}
         </li>
+        {/if}
       </ul>
     </div>
 
